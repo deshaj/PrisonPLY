@@ -1,0 +1,98 @@
+# ===============================
+# General Settings
+# ===============================
+
+debug: false
+
+# ===============================
+# Drug System Settings
+# ===============================
+
+drug-region: drugs_farm
+
+drug-lore:
+  - '&7Sell to the contraband merchant at spawn'
+  - '&7or plant to earn more.'
+
+# ===============================
+# Rank Multipliers
+# ===============================
+# Growth speed multiplier for each rank
+# Higher = faster growth
+
+rank-multipliers:
+  default: 0.1
+  vip: 0.25
+  mvp: 1.0
+  elite: 2.0
+
+# ===============================
+# Drug Limits
+# ===============================
+# Maximum number of drugs each rank can plant
+
+drug-limits:
+  default: 50
+  vip: 150
+  mvp: 300
+  elite: 600
+
+# ===============================
+# Enchant Settings
+# ===============================
+
+enchant-book-lore:
+  - '&7Right-click with a Diamond Pickaxe'
+  - '&7in your inventory to apply this enchant.'
+
+# ===============================
+# KeyFinder Rewards
+# ===============================
+# Chance is a percentage (0-100)
+# Commands support %player% placeholder
+
+keyfinder-rewards:
+  - chance: 2.0
+    command: 'say %player% found a vote key!'
+  - chance: 1.0
+    command: 'say %player% found a rare reward!'
+  - chance: 0.5
+    command: 'say %player% found an ultra rare reward!'
+
+# ===============================
+# Condense Settings
+# ===============================
+# Items that should be auto-condensed to blocks
+
+condense-conversions:
+  IRON_INGOT: IRON_BLOCK
+  GOLD_INGOT: GOLD_BLOCK
+  DIAMOND: DIAMOND_BLOCK
+  EMERALD: EMERALD_BLOCK
+  COAL: COAL_BLOCK
+  REDSTONE: REDSTONE_BLOCK
+  LAPIS_LAZULI: LAPIS_BLOCK
+  COPPER_INGOT: COPPER_BLOCK
+
+# ===============================
+# Messages
+# ===============================
+
+messages:
+  prefix: '&8[&6PrisonCoreY&8]&r '
+  reload: '&aConfiguration reloaded successfully!'
+  no-permission: '&cYou do not have permission to use this command.'
+  player-only: '&cThis command can only be used by players.'
+  invalid-player: '&cPlayer not found.'
+  gave-enchant-book: '&aYou gave &e%player% &aa &e%enchant% %level% &aenchant book!'
+  received-enchant-book: '&aYou received a &e%enchant% %level% &aenchant book!'
+  
+  drug-region-only: '&cYou can only plant drugs in the designated farming region!'
+  drug-limit-reached: '&cYou have reached your drug plant limit! &7(%current%/%max%)'
+  
+  no-pickaxe-found: '&cYou need a Diamond Pickaxe in your inventory to apply this enchant!'
+  enchant-applied: '&aSuccessfully applied &e%enchant% %level% &ato your pickaxe!'
+  enchant-already-has: '&cYour pickaxe already has this enchant or a higher level!'
+  
+  invalid-enchant: '&cInvalid enchant type. Available: Cubed, Smelting, KeyFinder, Condense'
+  invalid-level: '&cInvalid level. Cubed: 1-3, KeyFinder: 0-5, Others: 1'

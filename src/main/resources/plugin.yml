@@ -1,0 +1,13 @@
+name: PrisonCoreY
+version: 1.0.0
+main: com.prisoncory.PrisonCoreY
+api-version: 1.20
+softdepend: [WorldGuard, LuckPerms]
+author: deshaj
+description: Advanced prison plugin with drug farming and custom pickaxe enchants
+
+commands:
+  prisoncory:
+    description: Main plugin command
+    aliases: [pcy]
+    usage: /<command> [reload|give]
